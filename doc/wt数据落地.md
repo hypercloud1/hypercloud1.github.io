@@ -50,9 +50,6 @@ UDPCaster的init函数比较简洁
 
 这两个不同配置中的成员是通过"FD0900"这样的ID联系起来的，我们在设置sInfo的属性后，将同一个sid放入，这里就
 是"FD0900"。   
-<div align="center">
-  <img src="../pic/statemonitorCode.png" alt="statemonitorCode.png">
-</div>
 
 &emsp;&emsp;之后依次获取偏移后的集合竞价时段和交易时段，放入sInfo的_sections中。
 然后把这个sinfo放入到_map(StateMap)中。这之后，判断所有的合约是否在交易日中。
